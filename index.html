@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MarkupVision | AI-Powered Static Assets</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+        body { background-color: #0f172a; color: #f8fafc; }
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+<nav class="max-w-6xl mx-auto px-6 py-8 flex justify-between items-center">
+<div class="text-2xl font-bold gradient-text">MarkupVision.py</div>
+<div class="space-x-6 text-gray-400">
+<a class="hover:text-white" href="#how-to-use">How to Use</a>
+<a class="hover:text-white" href="https://github.com/dolius/markupvision" target="_blank" rel="noopener noreferrer">GitHub</a>
+</div>
+</nav>
+<header class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Turn your <span class="gradient-text">HTML</span> into your <span class="gradient-text">Designer</span>.
+            </h1>
+<p class="text-lg text-gray-400 mb-8">
+                A Python-driven agent that reads <code>data-prompt</code> attributes and replaces them with custom AI-generated images. No more stock photo hunting.
+            </p>
+<p class="text-sm text-gray-300 mb-8">
+<a class="text-sky-400 hover:text-sky-300 underline" href="https://modelsofidentity.com" target="_blank" rel="noopener noreferrer">Models of Identity</a>
+                builds design system agents, UI and AI hybrids.
+</p>
+<div class="flex gap-4">
+<a class="bg-blue-600 hover:bg-blue-500 px-8 py-3 rounded-lg font-semibold transition inline-block" href="#how-to-use">Get Started</a>
+<a class="bg-gray-800 hover:bg-gray-700 px-8 py-3 rounded-lg font-semibold transition inline-block" href="https://github.com/dolius/markupvision" target="_blank" rel="noopener noreferrer">View Source</a>
+</div>
+</div>
+<div class="relative">
+<img alt="Hero AI Image" class="rounded-2xl shadow-2xl border border-gray-700 w-full aspect-square object-cover" src="img/a-futuristic-high-tech-digital-art-masterpiece-showing-a-rob.png"/>
+</div>
+</header>
+<section class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-800">
+<h2 class="text-3xl font-bold text-center mb-16">The Workflow</h2>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="mb-6 flex justify-center">
+<img alt="Code Icon" class="w-24 h-24 rounded-xl" src="img/minimalist-3d-icon-of-a-coding-tag-blue-glow-isometric-view.png"/>
+</div>
+<h3 class="text-xl font-semibold mb-2">1. Define Prompt</h3>
+<p class="text-gray-400 text-sm">Add descriptive prompts directly to your img tags using standard data attributes.</p>
+</div>
+<div class="text-center">
+<div class="mb-6 flex justify-center">
+<img alt="Speed Icon" class="w-24 h-24 rounded-xl" src="img/minimalist-3d-icon-of-a-fast-lightning-bolt-purple-glow-isom.png"/>
+</div>
+<h3 class="text-xl font-semibold mb-2">2. Execute Agent</h3>
+<p class="text-gray-400 text-sm">Run the Python script. It parses your HTML, generates images via DALL-E, and saves them locally.</p>
+</div>
+<div class="text-center">
+<div class="mb-6 flex justify-center">
+<img alt="Checkmark Icon" class="w-24 h-24 rounded-xl" src="img/minimalist-3d-icon-of-a-sparkling-checkmark-green-glow-isome.png"/>
+</div>
+<h3 class="text-xl font-semibold mb-2">3. Auto-Injection</h3>
+<p class="text-gray-400 text-sm">The agent updates your HTML source, swapping prompts for path-mapped local files instantly.</p>
+</div>
+</div>
+</section>
+<section class="max-w-6xl mx-auto px-6 py-24 border-t border-gray-800" id="how-to-use">
+<h2 class="text-3xl font-bold text-center mb-12">How to Use MarkupVision</h2>
+<div class="grid md:grid-cols-3 gap-8 mb-10">
+<div class="bg-slate-900 border border-gray-700 rounded-xl p-6">
+<h3 class="text-xl font-semibold mb-3">1. Add Markup</h3>
+<p class="text-gray-400 text-sm">Place prompts directly in your HTML image tag using <code>data-prompt</code>.</p>
+</div>
+<div class="bg-slate-900 border border-gray-700 rounded-xl p-6">
+<h3 class="text-xl font-semibold mb-3">2. Run File</h3>
+<p class="text-gray-400 text-sm">Run the Python script and let it generate image assets from your prompt descriptions.</p>
+</div>
+<div class="bg-slate-900 border border-gray-700 rounded-xl p-6">
+<h3 class="text-xl font-semibold mb-3">3. Auto Replace</h3>
+<p class="text-gray-400 text-sm">The script rewrites <code>src</code> paths so the markup points to the newly generated local files.</p>
+</div>
+</div>
+<div class="bg-black border border-gray-700 rounded-xl p-6 overflow-x-auto">
+<pre class="text-sm text-gray-200"><code>&lt;img data-prompt="A futuristic design studio with holographic UI screens"/&gt;</code></pre>
+<p class="text-gray-400 text-sm mt-4">What it does: reads <code>data-prompt</code>, generates an image, saves it, and injects the final asset path back into your HTML.</p>
+</div>
+</section>
+<footer class="py-12 text-center text-gray-500 text-sm border-t border-gray-800">
+<p>Built with Python, OpenAI, and a bit of clever markup.</p>
+</footer>
+</body>
+</html>

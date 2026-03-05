@@ -1,0 +1,14 @@
+# Environment files
+.env
+.env.*
+
+# Common local secret files
+*.pem
+*.key
+*.p12
+*.pfx
+serviceAccount.json
+secrets.json
+
+# OS junk
+.DS_Store
